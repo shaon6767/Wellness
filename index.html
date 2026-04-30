@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anushka's Wellness App 🌸</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Water Reminder -->
+  <div class="water-float">💧 Drink Water 💧</div>
+
+  <!-- HOME SCREEN -->
+  <div id="screen-home" class="screen active">
+    <div class="petals">
+      <span class="petal p1">🌸</span>
+      <span class="petal p2">🌺</span>
+      <span class="petal p3">🌸</span>
+      <span class="petal p4">✨</span>
+      <span class="petal p5">🌷</span>
+    </div>
+    <div class="home-content">
+      <div class="avatar">🌸</div>
+      <h1 class="greeting">Hi Anushka,</h1>
+      <p class="subgreeting">How are you feeling today?</p>
+      <div class="mood-buttons">
+        <button class="mood-btn btn-good" onclick="navigate('good')">
+          <span class="btn-emoji">😊</span>
+          <span class="btn-text">Valo</span>
+          <span class="btn-sub">Feeling good!</span>
+        </button>
+        <button class="mood-btn btn-okay" onclick="navigate('okay')">
+          <span class="btn-emoji">🥀</span>
+          <span class="btn-text">Valona</span>
+          <span class="btn-sub">Could be better</span>
+        </button>
+        <button class="mood-btn btn-period" onclick="navigate('period')">
+          <span class="btn-emoji">😢</span>
+          <span class="btn-text">Period</span>
+          <span class="btn-sub">That time of month</span>
+        </button>
+        <button class="mood-btn btn-pain" onclick="navigate('pain')">
+          <span class="btn-emoji">😭</span>
+          <span class="btn-text">Math parina</span>
+          <span class="btn-sub">.......</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--Valo -->
+  <div id="screen-good" class="screen">
+    <div class="screen-inner">
+      <button class="back-btn" onclick="goBack()">← Back</button>
+      <div class="screen-header good-header">
+        <div class="big-emoji">🎉</div>
+        <h2 class="bkash">Cz jaa jaa blsiiii sob krsooo ekhn bkash e 500tk send kroo 01620500105 😢😢😢</h2>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card protein">
+          <div class="tip-icon">🥩</div>
+          <h3>Eat Protein</h3>
+          <p>Power your body with eggs, chicken, lentils, tofu, or paneer. Protein keeps you full and energized all day.</p>
+        </div>
+        <div class="tip-card hydrate">
+          <div class="tip-icon">💧</div>
+          <h3>Stay Hydrated</h3>
+          <p>Drink at least 8 glasses of water a day. Your skin, mood, and energy will all thank you!</p>
+        </div>
+        <div class="tip-card nojunk">
+          <div class="tip-icon">🚫</div>
+          <h3>No Junk Foods</h3>
+          <p>Skip the chips, fried snacks and sugary drinks. Whole foods = sustained energy. You got this!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Valona -->
+  <div id="screen-okay" class="screen">
+    <div class="screen-inner">
+      <button class="back-btn" onclick="goBack()">← Back</button>
+      <div class="screen-header okay-header">
+        <div class="big-emoji">💔💔</div>
+        <h2>Ja ja kheleee vlo lgbeee 😔👇</h2>
+      </div>
+
+      <div class="food-section">
+        <h3 class="section-title"> Foods That Can Lift Anushka's Mood 😯😯😯</h3>
+        <div class="food-grid">
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1601574494033-3c8800d80864?q=80" alt="Dark Chocolate"/>
+            <div class="food-info">
+              <h4>🍫 Dark Chocolate</h4>
+              <p>Boosts serotonin & dopamine. Rich in magnesium to calm the body. A few squares — not the whole bar!</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1601314002592-b8734bca6604?q=80" alt="Fatty Fish"/>
+            <div class="food-info">
+              <h4>🐟 Fatty Fish</h4>
+              <p>Salmon, sardines, mackerel — high in omega-3 which is linked to lower anxiety and better mood.</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?q=80" alt="Bananas"/>
+            <div class="food-info">
+              <h4>🍌 Bananas</h4>
+              <p>Packed with vitamin B6 to help produce serotonin. Easy, cheap, and genuinely effective!</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?q=80" alt="Eggs"/>
+            <div class="food-info">
+              <h4>🥚 Eggs</h4>
+              <p>Rich in choline and B vitamins — support brain function, energy, and a stable mood all day.</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1543158181-1274e5362710?q=80" alt="Nuts and Seeds"/>
+            <div class="food-info">
+              <h4>🥜 Nuts & Seeds</h4>
+              <p>Almonds, walnuts, sunflower seeds. Magnesium and healthy fats to reduce your stress response.</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://plus.unsplash.com/premium_photo-1675731118661-15dc54c11130?q=80" alt="Berries"/>
+            <div class="food-info">
+              <h4>🍓 Berries</h4>
+              <p>Blueberries, strawberries — packed with antioxidants that reduce brain inflammation linked to mood dips.</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1572357176061-7c96fd2af22f?q=80" alt="Leafy Greens"/>
+            <div class="food-info">
+              <h4>🥬 Leafy Greens</h4>
+              <p>Spinach and kale are high in folate. Low folate is directly linked to low mood — eat your greens!</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1571212515416-fef01fc43637?q=80" alt="Yogurt"/>
+            <div class="food-info">
+              <h4>🥛 Yogurt & Fermented Foods</h4>
+              <p>Supports gut health. Your gut produces a large portion of serotonin — gut and brain are deeply connected!</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1621956838481-f8f616950454?q=80" alt="Oats"/>
+            <div class="food-info">
+              <h4>🍚 Whole Carbs</h4>
+              <p>Oats, brown rice, whole grain bread. Help serotonin production and keep energy steady. Don't cut these!</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="drinks-box">
+          <h3>☕ Drinks That Help</h3>
+          <ul>
+            <li>🥛 Warm milk — calming effect</li>
+            <li>🍵 Herbal teas — chamomile, ginger</li>
+            <li>💧 Water — dehydration affects mood faster than you think</li>
+          </ul>
+        </div>
+
+        <div class="avoid-box">
+          <h3>🚫 Foods That Can Worsen anushka"s Mood (if overdone)😱😱😱</h3>
+          <ul>
+            <li>🍬 Too much sugar → quick spike, then crash</li>
+            <li>🍟 Ultra-processed junk food → brain fog and fatigue</li>
+          </ul>
+        </div>
+
+        <div class="gut-fact">
+          💡 <strong>Gut produces a large portion of serotonin.</strong> What you eat truly affects how you feel!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERIOD -->
+  <div id="screen-period" class="screen">
+    <div class="screen-inner">
+      <button class="back-btn" onclick="goBack()">← Back</button>
+      <div class="screen-header period-header">
+        <div class="big-emoji">🌺</div>
+        <h2>No worriess 😴</h2>
+      </div>
+
+      <div class="food-section">
+        <div class="cramp-intro">
+          Cramps are largely driven by <strong>prostaglandins</strong> (inflammation + uterine contractions). Foods that reduce inflammation and relax muscles make a real difference.
+        </div>
+
+        <h3 class="section-title">At least jknooo 2taa khawarr tryy krbaa</h3>
+        <div class="food-grid">
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1534533983688-c7b8e13fd3b6?q=80" alt="Spinach and Magnesium foods"/>
+            <div class="food-info">
+              <h4>🧲 Magnesium-Rich Foods</h4>
+              <p><em>Muscle relaxation — helps reduce uterine contractions.</em><br/>Spinach, kale, almonds, cashews, pumpkin seeds, dark chocolate (70%+), avocado.</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1763062550082-2c9f94096abb?q=80" alt="Salmon omega-3"/>
+            <div class="food-info">
+              <h4>🐟 Omega-3 Fatty Acids</h4>
+              <p><em>Anti-inflammatory — directly reduces prostaglandins.</em><br/>Salmon, sardines, chia seeds, flaxseeds, walnuts.</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1763343146204-50aec9ab91ef?q=80" alt="Lentils iron rich"/>
+            <div class="food-info">
+              <h4>🩸 Iron-Rich Foods</h4>
+              <p><em>Especially if you have heavy periods — blood loss leads to fatigue.</em><br/>Red meat (moderate), lentils, chickpeas, spinach, tofu. 💡 Pair with vitamin C for better absorption!</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1607522154118-75801cf8f2e9?q=80" alt="Ginger turmeric"/>
+            <div class="food-info">
+              <h4>🌿 Anti-Inflammatory Foods</h4>
+              <p><em>Calm overall pain response.</em><br/>Ginger tea, turmeric, berries, leafy greens.</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1563114773-84221bd62daa?q=80" alt="Watermelon hydrating"/>
+            <div class="food-info">
+              <h4>💧 Hydrating Foods & Drinks</h4>
+              <p><em>Dehydration can worsen cramps.</em><br/>Warm water, ginger tea, watermelon, cucumber.</p>
+            </div>
+          </div>
+
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1682530016867-6fcc63df0cfb?q=80" alt="Ginger tea"/>
+            <div class="food-info">
+              <h4>🍵 Ginger Tea</h4>
+              <p>One of the best remedies for period pain, Anushka. Brew fresh ginger with honey — sip slowly and let it soothe.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="warm-message">
+          🌸<strong>You're stronger than you feel.</strong> Rest, eat well, and be gentle with yourself.🌸
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MATH PARINA -->
+  <div id="screen-pain" class="screen">
+    <div class="screen-inner">
+      <button class="back-btn" onclick="goBack()">← Back</button>
+      <div class="screen-header pain-header">
+        <div class="big-emoji">😒</div>
+        <h2>Na parle ekhane ki porte bosho giye 😝😝😝😝😝😝</h2>
+      </div>
+
+      <div class="hug-banner">
+       Btw amrr bkash 01620500105 send moneyy 👉💔
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
